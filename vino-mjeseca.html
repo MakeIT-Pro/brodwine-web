@@ -6,12 +6,18 @@
 <title>Vino mjeseca – BrodWine</title>
 <meta name="description" content="Vino mjeseca po izboru sommeliera BrodWinea, s bilješkama kušanja i arhivom.">
 <link rel="canonical" href="https://makeit-pro.github.io/brodwine-web/vino-mjeseca.html">
+<link rel="alternate" hreflang="hr" href="https://makeit-pro.github.io/brodwine-web/vino-mjeseca.html">
+<link rel="alternate" hreflang="en" href="https://makeit-pro.github.io/brodwine-web/en-wine-of-the-month.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Vino mjeseca – BrodWine">
 <meta property="og:description" content="Vino mjeseca po izboru sommeliera BrodWinea, s bilješkama kušanja i arhivom.">
-<meta property="og:image" content="https://makeit-pro.github.io/brodwine-web/assets/img/casa-crnog-vina.jpg">
+<meta property="og:image" content="https://makeit-pro.github.io/brodwine-web/assets/img/og-brodwine.jpg">
 <meta property="og:locale" content="hr_HR">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0B0A0A">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="assets/fonts/Cormorant.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/site.css">
@@ -25,7 +31,7 @@ a{color:#D8C08C}a:hover{color:#F2EDE6}
 <main id="main">
 <div style="font-family: 'Montserrat', system-ui, sans-serif; font-weight: 300; background: #0B0A0A; color: #EDE6DD; min-height: 100vh; line-height: 1.8">
 
-<div style="border-bottom: 1px solid #2A2325"><div style="max-width: 1280px; margin: 0 auto; padding: 10px 32px; box-sizing: border-box; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; font-size: 0.68rem; letter-spacing: 0.34em; text-transform: uppercase; color: #A79C93"><span>Slavonski Brod · Osn. MMXXIV</span><span>Udruga za promicanje vina i vinske kulture</span></div></div>
+<div style="border-bottom: 1px solid #2A2325"><div style="max-width: 1280px; margin: 0 auto; padding: 10px 32px; box-sizing: border-box; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; font-size: 0.68rem; letter-spacing: 0.34em; text-transform: uppercase; color: #A79C93"><span>Slavonski Brod · Osn. MMXXIV</span><span class="bw-topbar-extra">Udruga za promicanje vina i vinske kulture</span></div></div>
 <header>
 <div style="max-width: 1280px; margin: 0 auto; padding: 26px 32px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
 <nav aria-label="Izbornik lijevo" style="flex: 1 1 260px; display: flex; flex-wrap: wrap; gap: 4px 34px; font-size: 0.72rem; letter-spacing: 0.3em; text-transform: uppercase; font-weight: 400">
@@ -37,6 +43,7 @@ a{color:#D8C08C}a:hover{color:#F2EDE6}
 <button type="button" class="bw-menu-btn" aria-label="Izbornik" aria-expanded="false"><span></span></button>
 <nav aria-label="Izbornik desno" style="flex: 1 1 260px; display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 4px 34px; font-size: 0.72rem; letter-spacing: 0.3em; text-transform: uppercase; font-weight: 400">
 <a href="kontakt.html" style="color: #EDE6DD; text-decoration: none; padding: 12px 0">Kontakt</a>
+<a href="en-wine-of-the-month.html" lang="en" aria-label="English version" style="color: #A79C93; text-decoration: none; padding: 12px 0">HR · <span style="color: #EDE6DD">EN</span></a>
 <a href="wine-club.html" style="border: 1px solid #C9A55C; color: #C9A55C; text-decoration: none; padding: 12px 22px">Wine Club</a>
 </nav>
 </div>
@@ -51,7 +58,7 @@ a{color:#D8C08C}a:hover{color:#F2EDE6}
 <section style="padding: 32px 32px 0">
 <article style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; border: 1px solid #C9A55C">
 <div style="flex: 1 1 480px; min-width: 0; position: relative; min-height: 760px">
-<img src="assets/img/casa-crnog-vina.jpg" alt="Čaša crnog vina s grožđem u polumraku" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; object-fit: cover">
+<img fetchpriority="high" decoding="async" src="assets/img/casa-crnog-vina-1600.webp" srcset="assets/img/casa-crnog-vina-800.webp 800w, assets/img/casa-crnog-vina-1600.webp 1600w" sizes="100vw" alt="Čaša crnog vina s grožđem u polumraku" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; object-fit: cover">
 <p style="position: absolute; left: 28px; top: 28px; margin: 0; font-family: 'Cinzel', serif; font-size: 0.75rem; letter-spacing: 0.34em; color: #EDE6DD; border: 1px solid rgba(237,230,221,0.5); padding: 8px 14px">Nº [01] · [MJESEC GODINA]</p>
 </div>
 <div style="flex: 1 1 520px; min-width: 0; padding: 72px 60px; box-sizing: border-box; background: #140F11; display: flex; flex-direction: column; gap: 26px">
@@ -102,25 +109,25 @@ a{color:#D8C08C}a:hover{color:#F2EDE6}
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px">
 <article style="display: flex; flex-direction: column; gap: 14px">
-<img src="assets/img/boca-podrum.jpg" alt="Boca crnog vina" style="display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover">
+<img loading="lazy" decoding="async" src="assets/img/boca-podrum-1600.webp" srcset="assets/img/boca-podrum-800.webp 800w, assets/img/boca-podrum-1600.webp 1600w" sizes="(max-width: 720px) 50vw, 25vw" alt="Boca crnog vina" style="display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover">
 <p style="margin: 0; font-size: 0.66rem; letter-spacing: 0.32em; text-transform: uppercase; color: #C9A55C">Nº [00] · [MJESEC]</p>
 <h3 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.7rem; line-height: 1.15">[NAZIV VINA]</h3>
 <p style="margin: 0; color: #A79C93; font-size: 0.9rem">[VINARIJA] · [SORTA]</p>
 </article>
 <article style="display: flex; flex-direction: column; gap: 14px">
-<img src="assets/img/bijelo-vino.jpg" alt="Čaša bijelog vina" style="display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover">
+<img loading="lazy" decoding="async" src="assets/img/bijelo-vino-1600.webp" srcset="assets/img/bijelo-vino-800.webp 800w, assets/img/bijelo-vino-1600.webp 1600w" sizes="(max-width: 720px) 50vw, 25vw" alt="Čaša bijelog vina" style="display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover">
 <p style="margin: 0; font-size: 0.66rem; letter-spacing: 0.32em; text-transform: uppercase; color: #C9A55C">Nº [00] · [MJESEC]</p>
 <h3 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.7rem; line-height: 1.15">[NAZIV VINA]</h3>
 <p style="margin: 0; color: #A79C93; font-size: 0.9rem">[VINARIJA] · [SORTA]</p>
 </article>
 <article style="display: flex; flex-direction: column; gap: 14px">
-<img src="assets/img/natakanje-rose.jpg" alt="Natakanje rosé vina" style="display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover">
+<img loading="lazy" decoding="async" src="assets/img/natakanje-rose-1600.webp" srcset="assets/img/natakanje-rose-800.webp 800w, assets/img/natakanje-rose-1600.webp 1600w" sizes="(max-width: 720px) 50vw, 25vw" alt="Natakanje rosé vina" style="display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover">
 <p style="margin: 0; font-size: 0.66rem; letter-spacing: 0.32em; text-transform: uppercase; color: #C9A55C">Nº [00] · [MJESEC]</p>
 <h3 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.7rem; line-height: 1.15">[NAZIV VINA]</h3>
 <p style="margin: 0; color: #A79C93; font-size: 0.9rem">[VINARIJA] · [SORTA]</p>
 </article>
 <article style="display: flex; flex-direction: column; gap: 14px">
-<img src="assets/img/natakanje-crno.jpg" alt="Natakanje crnog vina" style="display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover">
+<img loading="lazy" decoding="async" src="assets/img/natakanje-crno-1600.webp" srcset="assets/img/natakanje-crno-800.webp 800w, assets/img/natakanje-crno-1600.webp 1600w" sizes="(max-width: 720px) 50vw, 25vw" alt="Natakanje crnog vina" style="display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover">
 <p style="margin: 0; font-size: 0.66rem; letter-spacing: 0.32em; text-transform: uppercase; color: #C9A55C">Nº [00] · [MJESEC]</p>
 <h3 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.7rem; line-height: 1.15">[NAZIV VINA]</h3>
 <p style="margin: 0; color: #A79C93; font-size: 0.9rem">[VINARIJA] · [SORTA]</p>

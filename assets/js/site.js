@@ -15,7 +15,7 @@
     e.preventDefault();
     var m=f.querySelector('.bw-form-msg');
     if(!m){m=document.createElement('p');m.className='bw-form-msg';m.setAttribute('role','status');m.style.cssText='grid-column:1/-1;margin:0;color:#C9A55C;font-size:.9rem';f.appendChild(m);}
-    m.textContent='Hvala! Poruka je zaprimljena – javit ćemo vam se uskoro.';
+    m.textContent=document.documentElement.lang==='en'?'Thank you! Your message has been received – we will be in touch soon.':'Hvala! Poruka je zaprimljena – javit ćemo vam se uskoro.';
     f.reset();
   });});
 })();

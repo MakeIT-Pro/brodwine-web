@@ -19,6 +19,14 @@ Uživo (GitHub Pages): https://makeit-pro.github.io/brodwine-web/
 | `kontakt.html` | Kontakt i obrazac |
 | `privatnost.html` | Politika privatnosti (predložak – provjeriti prije objave) |
 | `en.html` | Početna na engleskom |
+| `en-*.html` | Engleske verzije svih podstranica (about, wine-evenings, evening, wine-of-the-month, wine-club, private-tastings, contact, privacy) |
+| `404.html` | Stranica „nije pronađeno“ (HR/EN) |
+
+## Tehničke napomene
+
+- Slike su u WebP formatu u dvije veličine (800 i 1600 px) sa `srcset` i odgođenim učitavanjem; `og-brodwine.jpg` je slika za dijeljenje na mrežama (1200×630).
+- Fontovi se poslužuju lokalno, bez poziva prema Googleu.
+- HR/EN prekidač nalazi se u zaglavlju svake stranice; stranice su povezane `hreflang` oznakama.
 
 ## Pokretanje lokalno
 
