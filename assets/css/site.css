@@ -1,0 +1,34 @@
+/* Fontovi se poslužuju s vlastitog servera (bez Google Fonts poziva – bolje za GDPR i brzinu). Licenca: SIL Open Font License. */
+@font-face{font-family:'Cinzel';src:url(../fonts/Cinzel.woff2) format('woff2');font-weight:400 900;font-display:swap}
+@font-face{font-family:'Cormorant Garamond';src:url(../fonts/Cormorant.woff2) format('woff2');font-weight:300 700;font-style:normal;font-display:swap}
+@font-face{font-family:'Cormorant Garamond';src:url(../fonts/CormorantItalic.woff2) format('woff2');font-weight:300 700;font-style:italic;font-display:swap}
+@font-face{font-family:'Montserrat';src:url(../fonts/Montserrat.woff2) format('woff2');font-weight:100 900;font-display:swap}
+@font-face{font-family:'Great Vibes';src:url(../fonts/GreatVibes.woff2) format('woff2');font-weight:400;font-display:swap}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+img,video{max-width:100%}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #C9A55C;outline-offset:3px}
+.bw-skip{position:absolute;left:-9999px;top:8px;background:#C9A55C;color:#0B0A0A;padding:12px 18px;z-index:100;font:500 0.8rem Montserrat,sans-serif;letter-spacing:.2em;text-transform:uppercase}
+.bw-skip:focus{left:8px}
+.bw-menu-btn{display:none;width:48px;height:48px;background:transparent;border:1px solid rgba(237,230,221,.35);color:#EDE6DD;align-items:center;justify-content:center;cursor:pointer;flex:0 0 auto}
+.bw-menu-btn span{display:block;width:18px;height:1px;background:currentColor;position:relative}
+.bw-menu-btn span::before,.bw-menu-btn span::after{content:"";position:absolute;left:0;width:18px;height:1px;background:currentColor}
+.bw-menu-btn span::before{top:-6px}.bw-menu-btn span::after{top:6px}
+#cookie-banner[hidden]{display:none!important}
+@media (max-width: 860px){
+  header > div{flex-wrap:wrap!important}
+  header .bw-logo{order:-1;flex:1 1 auto!important;text-align:left!important;font-size:1.35rem!important}
+  header .bw-menu-btn{display:flex;order:0}
+  header nav{display:none!important;order:1;flex:1 1 100%!important;flex-direction:column!important;align-items:flex-start!important;justify-content:flex-start!important;gap:0!important;border-top:1px solid rgba(237,230,221,.14);padding-top:8px}
+  body.menu-open header nav{display:flex!important}
+  header nav a{padding:14px 0!important}
+}
+@media (max-width: 720px){
+  [style*="max-width: 1280px"]{padding-left:20px!important;padding-right:20px!important}
+  [style*="padding: 140px"]{padding-top:88px!important;padding-bottom:88px!important}
+  [style*="padding: 72px 60px"],[style*="padding: 56px 48px"],[style*="padding: 64px 48px"],[style*="padding: 72px 48px"]{padding:40px 22px!important}
+  [style*="min-height: 640px"],[style*="min-height: 760px"],[style*="min-height: 620px"],[style*="min-height: 600px"]{min-height:420px!important}
+  [style*="grid-column: span 2"]{grid-column:auto!important}
+  [style*="left: 48px; top: 50%"]{left:22px!important;right:22px!important}
+  dl[style*="repeat(3, minmax(0, 1fr))"]{grid-template-columns:1fr!important}
+}

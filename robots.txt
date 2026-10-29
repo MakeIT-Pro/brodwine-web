@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://makeit-pro.github.io/brodwine-web/sitemap.xml
