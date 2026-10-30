@@ -5,6 +5,7 @@
 @font-face{font-family:'Montserrat';src:url(../fonts/Montserrat.woff2) format('woff2');font-weight:100 900;font-display:swap}
 @font-face{font-family:'Great Vibes';src:url(../fonts/GreatVibes.woff2) format('woff2');font-weight:400;font-display:swap}
 *,*::before,*::after{box-sizing:border-box}
+main{overflow-x:clip}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 img,video{max-width:100%}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #C9A55C;outline-offset:3px}
