@@ -59,3 +59,53 @@ input::placeholder,textarea::placeholder{color:#6B5F58}
   h1{overflow-wrap:break-word}
 }
 
+
+/* --- Premium sloj 2 --- */
+/* filmska tekstura */
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:90;opacity:.07;mix-blend-mode:overlay;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+/* zaglavlje koje ostaje gore */
+header.bw-fixed{position:fixed;top:0;left:0;right:0;z-index:80;background:rgba(11,10,10,.9);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,165,92,.18);animation:bwDown .45s cubic-bezier(.2,.7,.2,1)}
+header.bw-fixed > div{padding-top:12px!important;padding-bottom:12px!important}
+header.bw-fixed .bw-logo{font-size:1.35rem!important}
+@keyframes bwDown{from{transform:translateY(-100%)}to{transform:none}}
+/* parallax */
+[data-parallax]{will-change:transform}
+/* vodoravni klizač */
+.bw-slider{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:0 max(32px,calc((100vw - 1216px)/2)) 120px;scrollbar-width:none;cursor:grab}
+.bw-slider::-webkit-scrollbar{display:none}
+.bw-slide{flex:0 0 clamp(260px,30vw,420px);aspect-ratio:4/5;margin:0;scroll-snap-align:start;overflow:hidden}
+.bw-slide:nth-child(3n+2){aspect-ratio:3/4;margin-top:48px}
+.bw-slide img{transition:transform 1.2s cubic-bezier(.2,.7,.2,1),filter .8s ease}
+.bw-slide:hover img{transform:scale(1.05)}
+.bw-slider-btn{width:48px;height:48px;border:1px solid rgba(201,165,92,.55);background:transparent;color:#C9A55C;font-size:1.1rem;cursor:pointer;transition:background .3s,color .3s}
+.bw-slider-btn:hover{background:#C9A55C;color:#0B0A0A}
+/* mozaik galerija */
+.bw-mosaic{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:220px;gap:10px;grid-auto-flow:dense}
+.bw-mosaic img{width:100%!important;height:100%!important;object-fit:cover}
+.bw-mosaic img:nth-child(1){grid-column:span 2;grid-row:span 2}
+.bw-mosaic img:nth-child(4){grid-row:span 2}
+.bw-mosaic img:nth-child(5){grid-row:span 2}
+.bw-mosaic img:nth-child(6){grid-column:span 2}
+@media (max-width:720px){.bw-mosaic{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:160px}.bw-mosaic img:nth-child(5){grid-row:span 2}
+.bw-mosaic img:nth-child(6){grid-column:span 2}}
+/* povećanje fotografija */
+[data-lightbox] img{cursor:zoom-in}
+.bw-lb{position:fixed;inset:0;z-index:100;background:rgba(8,7,7,.96);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .35s ease}
+.bw-lb.open{opacity:1}
+.bw-lb img{max-width:min(92vw,1500px);max-height:84vh;object-fit:contain;box-shadow:0 30px 90px rgba(0,0,0,.7)}
+.bw-lb button{position:absolute;background:transparent;border:1px solid rgba(201,165,92,.5);color:#C9A55C;width:52px;height:52px;font-size:1.2rem;cursor:pointer}
+.bw-lb button:hover{background:#C9A55C;color:#0B0A0A}
+.bw-lb .bw-lb-close{top:20px;right:20px}.bw-lb .bw-lb-prev{left:20px;top:50%}.bw-lb .bw-lb-next{right:20px;top:50%}
+.bw-lb p{position:absolute;bottom:22px;left:0;right:0;text-align:center;margin:0;font:300 .8rem Montserrat,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#A79C93}
+/* monogrami */
+.bw-mono{transition:border-color .5s}
+.bw-mono:hover{border-color:rgba(201,165,92,.6)!important}
+.bw-countdown [data-cd]{font-variant-numeric:tabular-nums}
+@media (max-width:720px){.bw-countdown{gap:18px!important;flex-wrap:wrap}.bw-countdown [data-cd]{font-size:2rem!important}.bw-quote{min-height:520px!important}.bw-slide:nth-child(3n+2){margin-top:24px}}
+@media (prefers-reduced-motion: reduce){header.bw-fixed{animation:none}.bw-slide img{transition:none}}
+@media (max-width:720px){
+  [style*="minmax(220px, 1fr)"]{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  section[aria-label="Brojke"] [style*="padding: 44px 28px"],section[aria-label="In numbers"] [style*="padding: 44px 28px"]{padding:28px 16px!important}
+  .bw-mono span:last-child{font-size:2rem!important}
+}
